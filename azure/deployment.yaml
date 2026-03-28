@@ -1,0 +1,23 @@
+# hello-world-gitops/azure/deployment.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hello-world
+  template:
+    metadata:
+      labels:
+        app: hello-world
+    spec:
+      containers:
+        - name: app
+          # Replace with your actual ECR repository URL
+          image: kenaksclusteracr.azurecr.io/hello-world:latest    #<acr-name>.azurecr.io/hello-world:latest
+          ports:
+            - containerPort: 5000

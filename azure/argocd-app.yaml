@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hello-world-aws
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/araalkaz/hello-world-gitops.git
+    targetRevision: HEAD
+    path: aws
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true    # Automatically delete resources removed from Git
+      selfHeal: true    # Automatically revert manual changes
+    syncOptions:
+      - CreateNamespace=true

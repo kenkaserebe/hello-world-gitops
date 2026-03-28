@@ -1,0 +1,14 @@
+# hello-world-gitops/aws/service.yaml
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-world
+  namespace: default
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 5000
+  selector:
+    app: hello-world
