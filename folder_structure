@@ -1,8 +1,0 @@
-hello-world-gitops/
-|---aws/
-|    |---deployment.yaml
-|    |---service.yaml
-|
-|---azure/
-     |---deployment.yaml
-     |---service.yaml
