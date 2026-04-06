@@ -18,6 +18,6 @@ spec:
       containers:
         - name: app
           # Replace with your actual ECR repository URL
-          image: kenaksclusteracr.azurecr.io/hello-world:latest    #<acr-name>.azurecr.io/hello-world:latest
+          image: kenaksclusteracr.azurecr.io/hello-world:63ed45b
           ports:
             - containerPort: 5000

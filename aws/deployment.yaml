@@ -18,6 +18,6 @@ spec:
       containers:
         - name: app
           # Replace with your actual ECR repository URL
-          image: 380821404406.dkr.ecr.eu-west-2.amazonaws.com/ken-eks-cluster-app-repo:latest
+          image: 380821404406.dkr.ecr.eu-west-2.amazonaws.com/ken-eks-cluster-app-repo:63ed45b
           ports:
             - containerPort: 5000
