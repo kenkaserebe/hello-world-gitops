@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/araalkaz/hello-world-gitops.git
+    repoURL: https://github.com/kenkaserebe/hello-world-gitops.git
     targetRevision: HEAD
     path: aws
   destination:

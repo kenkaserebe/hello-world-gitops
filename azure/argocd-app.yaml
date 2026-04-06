@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: hello-world-aws
+  name: hello-world-azure
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/araalkaz/hello-world-gitops.git
+    repoURL: https://github.com/kenkaserebe/hello-world-gitops.git
     targetRevision: HEAD
     path: aws
   destination:
