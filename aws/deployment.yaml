@@ -1,4 +1,4 @@
-# hello-world-gitops/aws/deployment.yaml
+# multi-cloud-gitops-platform/hello-world-gitops/aws/deployment.yaml
 
 apiVersion: apps/v1
 kind: Deployment

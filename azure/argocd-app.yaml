@@ -1,3 +1,5 @@
+# multi-cloud-gitops-platform/hello-world-gitops/azure/argocd-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -8,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/kenkaserebe/hello-world-gitops.git
     targetRevision: HEAD
-    path: aws
+    path: azure
   destination:
     server: https://kubernetes.default.svc
     namespace: default

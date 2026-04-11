@@ -1,4 +1,4 @@
-# hello-world-gitops/azure/service.yaml
+# multi-cloud-gitops-platform/hello-world-gitops/azure/service.yaml
 
 apiVersion: v1
 kind: Service
